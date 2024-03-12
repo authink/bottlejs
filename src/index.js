@@ -1,2 +1,2 @@
-export { default as Active } from './Active'
-export { default as Loading } from './Loading'
+export { Active } from './Active'
+export { Loading } from './Loading'

@@ -1,7 +1,7 @@
 import { Spin } from 'antd'
 import React from 'react'
 
-export default function Loading() {
+export function Loading() {
   return (
     <div
       style={{
