@@ -2,6 +2,10 @@
   "name": "ink-bottlejs",
   "version": "0.0.1",
   "description": "A react library developed with dumi",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/authink/bottlejs"
+  },
   "license": "MIT",
   "main": "lib/index.js",
   "module": "es/index.js",
