@@ -1,10 +1,10 @@
 {
-  "name": "@ink/bottlejs",
-  "version": "0.0.2",
+  "name": "@authink/bottlejs",
+  "version": "0.0.1",
   "description": "A react library developed with dumi",
   "repository": {
     "type": "git",
-    "url": "https://github.com/authink/bottlejs"
+    "url": "git+https://github.com/authink/bottlejs.git"
   },
   "license": "MIT",
   "main": "lib/index.js",
@@ -74,7 +74,8 @@
     "antd": "5.15.2"
   },
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
   },
   "authors": [
     "huoyijie.cn"
