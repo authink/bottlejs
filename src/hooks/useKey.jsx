@@ -1,8 +1,8 @@
 import { http } from '@/authink/commonjs'
 import { useLocale } from 'next-intl'
-import useToken from './useToken'
+import { useToken } from './useToken'
 
-export default function useKey({ basePath, path, method = http.GET }) {
+export function useKey({ basePath, path, method = http.GET }) {
   const token = useToken()
   const locale = useLocale()
 

@@ -1,6 +1,6 @@
 import { useLocalStorageValue, useSessionStorageValue } from '@react-hookz/web'
 
-export default function useToken() {
+export function useToken() {
   const rememberMe = useLocalStorageValue('remember_me', {
     defaultValue: false,
     initializeWithValue: false,
