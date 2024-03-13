@@ -1,6 +1,6 @@
 {
   "name": "@authink/bottlejs",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A react library developed with dumi",
   "repository": {
     "type": "git",
@@ -11,7 +11,6 @@
   "module": "es/index.js",
   "types": "es/index.d.ts",
   "files": [
-    "src",
     "es",
     "lib"
   ],
