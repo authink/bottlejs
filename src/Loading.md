@@ -1,7 +1,7 @@
 ## Loading
 
 ```jsx
-import { Loading } from '@ink/bottlejs'
+import { Loading } from '@authink/bottlejs'
 
 export default () => (
   <div style={{ width: '100%', height: 400 }}>

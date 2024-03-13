@@ -9,8 +9,8 @@
     "paths": {
       "@/*": ["./src/*"],
       "@@/*": [".dumi/tmp/*"],
-      "bottlejs": ["src"],
-      "bottlejs/*": ["src/*", "*"]
+      "@authink/bottlejs": ["src"],
+      "@authink/bottlejs/*": ["src/*", "*"]
     }
   },
   "include": [".dumirc.ts", "src/**/*"]

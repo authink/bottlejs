@@ -1,7 +1,4 @@
-# bottlejs
-
-[![NPM version](https://img.shields.io/npm/v/bottlejs.svg?style=flat)](https://npmjs.org/package/bottlejs)
-[![NPM downloads](http://img.shields.io/npm/dm/bottlejs.svg?style=flat)](https://npmjs.org/package/bottlejs)
+# @authink/bottlejs
 
 A react library developed with dumi
 
