@@ -12,8 +12,8 @@ dependencies:
     specifier: 5.3.1
     version: 5.3.1(react-dom@18.2.0)(react@18.2.0)
   '@authink/commonjs':
-    specifier: github:authink/commonjs
-    version: github.com/authink/commonjs/854611ff5081a7d6d629339120361dff6b0f1f89
+    specifier: 0.0.4
+    version: 0.0.4
   '@babel/runtime':
     specifier: 7.24.0
     version: 7.24.0
@@ -162,6 +162,10 @@ packages:
   /@antfu/utils@0.7.7:
     resolution: {integrity: sha512-gFPqTG7otEJ8uP6wrhDv6mqwGWYZKNvAcCq6u9hOj0c+IKCEsY4L1oC9trPq2SaWIzAfHvqfBDxF591JkMf+kg==}
     dev: true
+
+  /@authink/commonjs@0.0.4:
+    resolution: {integrity: sha512-Dkhyofkam9nOsAWxQid6j9owt0ptzPinCRK+LSFKJCOolRxHyXw9OzWYvYJx4HLnne5gHM9FI3825HCeekqrZg==}
+    dev: false
 
   /@babel/code-frame@7.23.5:
     resolution: {integrity: sha512-CgH3s1a96LipHCmSUmYFPwY7MNx8C3avkq7i4Wl3cfa662ldtUe4VM1TPXX70pfmrlWTb6jLqTYrZyT2ZTJBgA==}
@@ -6336,7 +6340,7 @@ packages:
     dev: true
 
   /get-stream@3.0.0:
-    resolution: {integrity: sha1-jpQ9E1jcN1VQVOy+LtsFqhdO3hQ=}
+    resolution: {integrity: sha512-GlhdIUuVakc8SJ6kK0zAFbiGzRFzNnY4jUuEbV9UROo4Y+0Ny4fjvcZFVTeDA4odpFyOQzaw6hXukJSq/f28sQ==}
     engines: {node: '>=4'}
     dev: true
 
@@ -7114,7 +7118,7 @@ packages:
     dev: true
 
   /inherits@2.0.3:
-    resolution: {integrity: sha512-x00IRNXNy63jwGkJmzPigoySHbaqpNuzKbBOmzK+g2OdZpQ9w+sxCN+VSB3ja7IAge2OP2qpfxTjeNcyjmW1uw==}
+    resolution: {integrity: sha1-Yzwsg+PaQqUC9SRmAiSA9CCCYd4=}
     dev: true
 
   /inherits@2.0.4:
@@ -9660,7 +9664,7 @@ packages:
     dev: true
 
   /pify@3.0.0:
-    resolution: {integrity: sha512-C3FsVNH1udSEX48gGX1xfvwTWfsYWj5U+8/uK15BGzIGrKoUpghX8hWZwa/OFnakBiiVNmBvemTJR5mcy7iPcg==}
+    resolution: {integrity: sha1-5aSs0sEB/fPZpNB/DbxNtJ3SgXY=}
     engines: {node: '>=4'}
     dev: true
 
@@ -12161,7 +12165,7 @@ packages:
     dev: true
 
   /strip-ansi@4.0.0:
-    resolution: {integrity: sha1-qEeQIusaw2iocTibY1JixQXuNo8=}
+    resolution: {integrity: sha512-4XaJ2zQdCzROZDivEVIDPkcQn8LMFSa8kj8Gxb/Lnwzv9A8VctNZ+lfivC/sV3ivW8ElJTERXZoPBRrZKkNKow==}
     engines: {node: '>=4'}
     dependencies:
       ansi-regex: 3.0.1
@@ -12585,7 +12589,7 @@ packages:
     dev: true
 
   /through@2.3.8:
-    resolution: {integrity: sha1-DdTJ/6q8NXlgsbckEV1+Doai4fU=}
+    resolution: {integrity: sha512-w89qg7PI8wAdvX60bMDP+bFoD5Dvhm9oLheFp5O4a2QF0cSBGsBX4qZmadPMvVqlLJBBci+WqGGOAPvcDeNSVg==}
     dev: true
 
   /timed-out@4.0.1:
@@ -13459,7 +13463,7 @@ packages:
     dev: true
 
   /yallist@2.1.2:
-    resolution: {integrity: sha512-ncTzHV7NvsQZkYe1DW7cbDLm0YpzHmZF5r/iyP3ZnQtMiJ+pjzisCiMNI+Sj+xQF5pXhSHxSB3uDbsBTzY/c2A==}
+    resolution: {integrity: sha1-HBH5IY8HYImkfdUS+TxmmaaoHVI=}
     dev: true
 
   /yallist@3.1.1:
@@ -13527,9 +13531,3 @@ packages:
   /zwitch@2.0.4:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
     dev: true
-
-  github.com/authink/commonjs/854611ff5081a7d6d629339120361dff6b0f1f89:
-    resolution: {tarball: https://codeload.github.com/authink/commonjs/tar.gz/854611ff5081a7d6d629339120361dff6b0f1f89}
-    name: '@authink/commonjs'
-    version: 0.0.4
-    dev: false

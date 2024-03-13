@@ -1,19 +1,17 @@
 {
   "name": "@authink/bottlejs",
-  "version": "0.0.5",
+  "version": "0.0.10",
   "description": "A react library developed with dumi",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/authink/bottlejs.git"
   },
   "license": "MIT",
-  "main": "lib/index.js",
   "module": "es/index.js",
   "types": "es/index.d.ts",
   "files": [
     "src",
-    "es",
-    "lib"
+    "es"
   ],
   "scripts": {
     "build": "father build",
@@ -73,7 +71,7 @@
   "peerDependencies": {
     "@ant-design/cssinjs": "1.18.4",
     "@ant-design/icons": "5.3.1",
-    "@authink/commonjs": "0.0.4",
+    "@authink/commonjs": "^0.0.5",
     "@react-hookz/web": "24.0.4",
     "antd": "5.15.2",
     "next": "14.1.3",

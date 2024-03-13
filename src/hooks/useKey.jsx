@@ -1,4 +1,4 @@
-import { http } from '@/authink/commonjs'
+import { http } from '@authink/commonjs'
 import { useLocale } from 'next-intl'
 import { useToken } from './useToken'
 
