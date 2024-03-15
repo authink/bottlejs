@@ -10,6 +10,7 @@ export { SiderMenu } from './SiderMenu'
 export { UnloginLayout } from './UnloginLayout'
 export { WebApp } from './WebApp'
 
+export { useError } from './hooks/useError'
 export { useLayout } from './hooks/useLayout'
 export { useMutation } from './hooks/useMutation'
 export { useQuery } from './hooks/useQuery'
