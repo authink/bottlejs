@@ -1,8 +1,9 @@
-import { useMutation, useToken } from '@authink/bottlejs'
 import { fetcher, http, wait } from '@authink/commonjs'
 import { useRouter } from 'next/router'
 import React from 'react'
 import { SWRConfig } from 'swr'
+import { useMutation } from './hooks/useMutation'
+import { useToken } from './hooks/useToken'
 
 export function AppSWRConfig({ children }) {
   const router = useRouter()
