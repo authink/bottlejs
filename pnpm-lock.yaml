@@ -12,8 +12,8 @@ dependencies:
     specifier: 5.3.3
     version: 5.3.3(react-dom@18.2.0)(react@18.2.0)
   '@authink/commonjs':
-    specifier: ^0.0.7
-    version: 0.0.7
+    specifier: ^0.0.11
+    version: 0.0.11
   '@babel/runtime':
     specifier: 7.24.0
     version: 7.24.0
@@ -166,8 +166,8 @@ packages:
     resolution: {integrity: sha512-gFPqTG7otEJ8uP6wrhDv6mqwGWYZKNvAcCq6u9hOj0c+IKCEsY4L1oC9trPq2SaWIzAfHvqfBDxF591JkMf+kg==}
     dev: true
 
-  /@authink/commonjs@0.0.7:
-    resolution: {integrity: sha512-Jzf4/UXvRF0fLdiNGehphyHsGkaQdwaZEahC8x73VTrwIc2dIALgx7YoH298/z5FcwVByOmKnXylOoZvS5GcfQ==}
+  /@authink/commonjs@0.0.11:
+    resolution: {integrity: sha512-DLzw3pg8F6mxBeECZURu1PWveDGrJSSS5xBQIZsC/4/gaMe0dzSw1QXWGxZAJtJSvqeMb5dbbnR3S5lM0bcKpw==}
     dev: false
 
   /@babel/code-frame@7.23.5:
