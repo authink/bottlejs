@@ -1,11 +1,11 @@
 import { setImmediate } from '@authink/commonjs'
 import { App } from 'antd'
 
-export function useError() {
+export function useSuccess(): (value: string) => void {
   const { message } = App.useApp()
-  return (error) =>
+  return (value) =>
     setImmediate(() => {
       message.destroy()
-      message.error(error.message)
+      message.success(value)
     })
 }

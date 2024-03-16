@@ -1,10 +1,19 @@
 import { Layout, theme } from 'antd'
-import React, { useState } from 'react'
+import React, { ReactNode, useState } from 'react'
 import { FooterBar } from './FooterBar'
 import { HeaderBar } from './HeaderBar'
-import { SiderMenu } from './SiderMenu'
+import { MenuItem, SiderMenu } from './SiderMenu'
 
 const { Content } = Layout
+
+interface AppLayoutProps {
+  logoText: string
+  currentTheme: string
+  toggleTheme: () => void
+  menuItems: Array<MenuItem>
+  children: ReactNode
+  copyright: ReactNode
+}
 
 export const AppLayout = ({
   logoText,
@@ -13,7 +22,7 @@ export const AppLayout = ({
   menuItems,
   children,
   copyright,
-}) => {
+}: AppLayoutProps) => {
   const [collapsed, setCollapsed] = useState(false)
   const {
     token: { colorBgContainer, borderRadiusLG },

@@ -5,7 +5,19 @@ import React from 'react'
 
 const { Sider } = Layout
 
-export function SiderMenu({ logoText, collapsed, items }) {
+export interface MenuItem {
+  key: string
+  Icon: React.ComponentType<any>
+  route: string
+}
+
+interface SiderMenuProps {
+  logoText: string
+  collapsed: boolean
+  items: Array<MenuItem>
+}
+
+export function SiderMenu({ logoText, collapsed, items }: SiderMenuProps) {
   const t = useTranslations('menu')
   const router = useRouter()
   const pathname = router.pathname

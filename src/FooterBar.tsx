@@ -1,9 +1,13 @@
 import { Layout } from 'antd'
-import React from 'react'
+import React, { ReactNode } from 'react'
 
 const { Footer } = Layout
 
-export function FooterBar({ children }) {
+interface FooterBarProps {
+  children: ReactNode
+}
+
+export function FooterBar({ children }: FooterBarProps) {
   return (
     <Footer
       style={{

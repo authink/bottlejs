@@ -1,9 +1,13 @@
 import { Layout } from 'antd'
-import React from 'react'
+import React, { ReactNode } from 'react'
 
 const { Content } = Layout
 
-export function UnloginLayout({ children }) {
+interface UnloginLayoutProps {
+  children: ReactNode
+}
+
+export function UnloginLayout({ children }: UnloginLayoutProps) {
   return (
     <Layout>
       <Content

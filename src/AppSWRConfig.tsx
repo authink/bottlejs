@@ -1,11 +1,15 @@
 import { fetcher, http, wait } from '@authink/commonjs'
 import { useRouter } from 'next/router'
-import React from 'react'
+import React, { ReactNode } from 'react'
 import { SWRConfig } from 'swr'
 import { useMutation } from './hooks/useMutation'
 import { useToken } from './hooks/useToken'
 
-export function AppSWRConfig({ children }) {
+interface AppSWRConfigProps {
+  children: ReactNode
+}
+
+export function AppSWRConfig({ children }: AppSWRConfigProps) {
   const router = useRouter()
   const token = useToken()
   const { trigger } = useMutation({ path: 'token/refresh' })

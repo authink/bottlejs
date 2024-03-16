@@ -1,6 +1,9 @@
 import { CheckCircleFilled, CloseCircleFilled } from '@ant-design/icons'
 import React from 'react'
 
-export function Active({ value }) {
+interface ActiveProps {
+  value: boolean
+}
+export function Active({ value }: ActiveProps) {
   return value ? <CheckCircleFilled /> : <CloseCircleFilled />
 }

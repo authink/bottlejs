@@ -2,9 +2,20 @@ import { App, ConfigProvider, theme } from 'antd'
 import { NextIntlClientProvider } from 'next-intl'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
-import React, { useState } from 'react'
+import React, { ReactNode, useState } from 'react'
 import { AppSWRConfig } from './AppSWRConfig'
+import { MenuItem } from './SiderMenu'
 import { useLayout } from './hooks/useLayout'
+
+interface WebAppProps {
+  logoText: string
+  copyright: () => ReactNode
+  authnRoutes: Array<string>
+  timeZone: string
+  menuItems: Array<MenuItem>
+  Component: React.ComponentType<any>
+  pageProps: any
+}
 
 export function WebApp({
   logoText,
@@ -14,7 +25,7 @@ export function WebApp({
   menuItems,
   Component,
   pageProps,
-}) {
+}: WebAppProps) {
   const router = useRouter()
   const Layout = useLayout(() => authnRoutes.includes(router.pathname))
   const [currentTheme, setCurrentTheme] = useState('light')

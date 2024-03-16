@@ -14,8 +14,9 @@ export { useError } from './hooks/useError'
 export { useLayout } from './hooks/useLayout'
 export { useMutation } from './hooks/useMutation'
 export { useQuery } from './hooks/useQuery'
+export { useSuccess } from './hooks/useSuccess'
 export { useToken } from './hooks/useToken'
 
-export async function locales(locale) {
+export async function locales(locale: string) {
   return (await import(`./locales/${locale}.json`)).default
 }

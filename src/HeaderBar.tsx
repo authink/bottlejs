@@ -9,12 +9,19 @@ import React from 'react'
 import { LocaleSwitcher } from './LocaleSwitcher'
 const { Header } = Layout
 
+interface HeaderBarProps {
+  collapsed: boolean
+  setCollapsed: (collapsed: boolean) => void
+  currentTheme: string
+  toggleTheme: () => void
+}
+
 export function HeaderBar({
   collapsed,
   setCollapsed,
   currentTheme,
   toggleTheme,
-}) {
+}: HeaderBarProps) {
   const {
     token: { colorBgContainer },
   } = theme.useToken()

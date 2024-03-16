@@ -1,4 +1,5 @@
 import { createCache, extractStyle, StyleProvider } from '@ant-design/cssinjs'
+import type { DocumentContext } from 'next/document'
 import Document, { Head, Html, Main, NextScript } from 'next/document'
 import React from 'react'
 
@@ -12,7 +13,7 @@ export const HtmlDocument = () => (
   </Html>
 )
 
-HtmlDocument.getInitialProps = async (ctx) => {
+HtmlDocument.getInitialProps = async (ctx: DocumentContext) => {
   const cache = createCache()
   const originalRenderPage = ctx.renderPage
   ctx.renderPage = () =>
