@@ -11,7 +11,6 @@ interface KeyProps {
 export interface Key {
   basePath: string
   path: string
-  method: string
   locale: string
   accessToken?: string
 }
@@ -31,7 +30,6 @@ export function useKey({
   return {
     basePath,
     path,
-    method,
     locale,
     accessToken: token.value?.access_token,
   }

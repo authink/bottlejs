@@ -6,19 +6,17 @@ interface MutationProps {
   basePath?: string
   path: string
   method?: string
-  options?: any
 }
 
 export function useMutation({
   basePath,
   path,
   method = http.POST,
-  options,
 }: MutationProps) {
   const key = useKey({ basePath, path, method })
 
   const submit = async (key: Key, { arg: body }: { arg: any }) =>
-    await fetcher({ ...key, body })
+    await fetcher({ ...key, method, body })
 
-  return useSWRMutation(key, submit, options)
+  return useSWRMutation(key, submit)
 }
