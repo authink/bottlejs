@@ -1,4 +1,6 @@
 import { App, ConfigProvider, theme } from 'antd'
+import enUS from 'antd/locale/en_US'
+import zhCN from 'antd/locale/zh_CN'
 import { NextIntlClientProvider } from 'next-intl'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
@@ -46,6 +48,7 @@ export function WebApp({
               ? theme.darkAlgorithm
               : theme.defaultAlgorithm,
         }}
+        locale={router.locale === 'en' ? enUS : zhCN}
       >
         <App>
           <Layout
