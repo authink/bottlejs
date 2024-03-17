@@ -10,6 +10,8 @@ export { SiderMenu } from './SiderMenu'
 export { UnloginLayout } from './UnloginLayout'
 export { WebApp } from './WebApp'
 
+export { useColumns } from './hooks/useColumns'
+export { useDataSource } from './hooks/useDataSource'
 export { useError } from './hooks/useError'
 export { useLayout } from './hooks/useLayout'
 export { useMutation } from './hooks/useMutation'
