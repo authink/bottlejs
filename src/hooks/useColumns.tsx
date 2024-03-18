@@ -1,6 +1,6 @@
 import { useFormatter, useTranslations } from 'next-intl'
 import React from 'react'
-import { Active } from '../Active'
+import { Bool } from '../Bool'
 
 interface Column {
   key: string
@@ -9,16 +9,20 @@ interface Column {
   render: (value: any) => any
 }
 
-export function useColumns(fields: Array<string>): Array<Column> {
+interface Field {
+  name: string
+  type: string
+}
+
+export function useColumns(fields: Array<Field>): Array<Column> {
   const t = useTranslations()
   const format = useFormatter()
 
-  const fieldRender = (field: string) => {
-    switch (field) {
-      case 'active':
-        return (value: boolean) => <Active value={value} />
-      case 'createdAt':
-      case 'updatedAt':
+  const fieldRender = (type: string) => {
+    switch (type) {
+      case 'boolean':
+        return (value: boolean) => <Bool value={value} />
+      case 'datetime':
         return (value: string) =>
           format.dateTime(new Date(value), {
             year: 'numeric',
@@ -32,10 +36,10 @@ export function useColumns(fields: Array<string>): Array<Column> {
     }
   }
 
-  return fields.map((field) => ({
-    key: field,
-    dataIndex: field,
-    title: t(field),
-    render: fieldRender(field),
+  return fields.map(({ name, type }) => ({
+    key: name,
+    dataIndex: name,
+    title: t(name),
+    render: fieldRender(type),
   }))
 }

@@ -1,6 +1,6 @@
-export { Active } from './Active'
 export { AppLayout } from './AppLayout'
 export { AppSWRConfig } from './AppSWRConfig'
+export { Bool } from './Bool'
 export { FooterBar } from './FooterBar'
 export { HeaderBar } from './HeaderBar'
 export { HtmlDocument } from './HtmlDocument'
