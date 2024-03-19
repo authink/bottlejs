@@ -51,5 +51,5 @@ export const JsonViewer: React.FC<JsonViewerProps> = ({ data, title }) => {
     }
   }
 
-  return <Tree treeData={[getTreeData(data, title, title)]} />
+  return <Tree showLine treeData={[getTreeData(data, title, title)]} />
 }
