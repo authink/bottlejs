@@ -1,4 +1,4 @@
-import { CheckCircleOutlined, CloseCircleOutlined } from '@ant-design/icons'
+import { CheckOutlined, CloseOutlined } from '@ant-design/icons'
 import React from 'react'
 
 interface BoolProps {
@@ -6,5 +6,5 @@ interface BoolProps {
 }
 
 export function Bool({ value }: BoolProps) {
-  return value ? <CheckCircleOutlined /> : <CloseCircleOutlined />
+  return value ? <CheckOutlined /> : <CloseOutlined />
 }

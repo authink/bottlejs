@@ -23,7 +23,7 @@ export function useKey({
   const token = useToken()
   const locale = useLocale()
 
-  if (!http.valid(method) || (http.isGet(method) && !token.ready)) {
+  if (!http.valid(method) || (http.isGet(method) && !token.ready) || !path) {
     return null
   }
 
