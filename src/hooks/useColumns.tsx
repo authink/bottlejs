@@ -1,6 +1,7 @@
 import { useFormatter, useTranslations } from 'next-intl'
 import React from 'react'
 import { Bool } from '../Bool'
+import { JsonViewer } from '../JsonViewer'
 
 interface Column {
   key: string
@@ -18,7 +19,7 @@ export function useColumns(fields: Array<Field>): Array<Column> {
   const t = useTranslations()
   const format = useFormatter()
 
-  const fieldRender = (type: string) => {
+  const fieldRender = (name: string, type: string) => {
     switch (type) {
       case 'boolean':
         return (value: boolean) => <Bool value={value} />
@@ -31,6 +32,8 @@ export function useColumns(fields: Array<Field>): Array<Column> {
             hour: 'numeric',
             minute: 'numeric',
           })
+      case 'json':
+        return (value: any) => <JsonViewer title={name} data={value} />
       default:
         return (value: any) => value
     }
@@ -40,6 +43,6 @@ export function useColumns(fields: Array<Field>): Array<Column> {
     key: name,
     dataIndex: name,
     title: t(name),
-    render: fieldRender(type),
+    render: fieldRender(name, type),
   }))
 }
